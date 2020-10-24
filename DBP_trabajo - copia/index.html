@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="styleshhet" href="css/hayasaka.css">
+
+        <title>Trabajo Final</title>
+    
+    </head>
+
+    <body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <a href="#" class="navbar-brand">Proyecto</a>
+            </div>    
+    </nav>
+
+    <!--CONTENIDO  -->
+    <div class="container">
+        <div class="row pt-2">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="formTask">
+                            <div class="form-group">
+                                <input type="text" id="title" placeholder="Ingrese una tarea" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="description" rows="2" cols="30" class="form-control" placeholder="Ingrese una decripción"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block">
+                                Enviar Tarea
+                            </button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row pt-3">
+
+
+                  <div class="col-sm-4">
+                    <h3>Tareas</h3>
+                    <hr color="green" width="60%"  align="left"/>
+                        <div class="list-group" id="tareas">
+                            <div class="list-group-item">
+                                
+                                <div id="tasks"></div>  
+                            </div>
+                        </div>
+                  </div>
+        
+                  <div class="col-sm-4">
+                    <h3>Pendiente</h3>
+                    <hr color="blue" width="60%" align="left"/>
+
+                    <div class="list-group" id="tareasPendientes">
+                    </div>
+
+                  </div>
+        
+                  <div class="col-sm-4">
+                    <h3>Completadas</h3>
+                    <hr color="red" width="60%" align="left"/>
+
+                    <div class="list-group" id="tareasCompletadas">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+        </div>
+    </div>
+
+
+    <!-- SCRIPS-->
+    <script src="https://kit.fontawesome.com/f4a2ec8452.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
